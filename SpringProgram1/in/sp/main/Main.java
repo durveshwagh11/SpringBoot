@@ -10,7 +10,7 @@ public class Main {
         String config_loc = "in/sp/resources/applicationContext.xml";
         ApplicationContext context = new ClassPathXmlApplicationContext(config_loc);
 
-        Student stu = (Student) context.getBean("stdId");
+        Student stu = ((Student) context.getBean("stdId"));
         stu.display();
         System.out.println(" ");
         Employees employees = (Employees) context.getBean("EmployeeId");
